@@ -6,8 +6,8 @@ function hasOddNumber(array){
 }
 
 function hasAZero(arr){
-    return arr.some(function(num){
-        return num === 0;
+    return arr.toString().split('').some(function(num){
+        return num === '0';
     })
 
 }
@@ -18,4 +18,20 @@ function hasOnlyOddNumbers(array){
     })
 }
 
-function
+function hasNoDuplicates(arr){
+    return arr.every(function(val){
+        return val[]
+
+    })
+}
+
+function hasCertainKey(array, key){
+    return array.every(function(val){
+        return val[key] === ;
+    })
+}
+function hasCertainValue(array, key, value){
+    return array.every(function(val){
+        return val.key === val.value
+    })
+}
