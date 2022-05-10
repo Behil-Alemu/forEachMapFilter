@@ -20,18 +20,19 @@ function hasOnlyOddNumbers(array){
 
 function hasNoDuplicates(arr){
     return arr.every(function(val){
-        return val[]
+        return arr.indexOf(val) === arr.lastIndexOf(val);
 
     })
 }
 
 function hasCertainKey(array, key){
     return array.every(function(val){
-        return val[key] === ;
+        return key in val ;
     })
 }
+//  return key in val ?
 function hasCertainValue(array, key, value){
     return array.every(function(val){
-        return val.key === val.value
+        return val[key] === value;
     })
 }
